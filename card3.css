@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Open+Sans:ital@1&family=Oswald&family=Playfair+Display:ital,wght@1,500&family=Roboto+Condensed:ital,wght@0,500;1,400&display=swap');
+body{
+    font-family: 'DM Serif Display', serif;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.index{
+    background-color:azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.mrg{
+    display: flex;
+    width: 550px;
+    height: 350px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.img{
+    min-width: 200px;
+    height: 100%;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    
+
+}
+img:hover{
+    transform: scale(1.4);
+}
+.content{
+    padding: 15px;
+    text-align: center;
+    transition-property: transform ;
+    animation-name: us;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+   
+   
+}
+@keyframes us{
+    from{
+        transform:translateX(-1000px)
+    }
+    to{
+        transform:translateX(0px) ;
+    }
+}
+.gift{
+    margin-bottom: 20px;
+}
+.para{
+    margin-bottom: 20px;
+}
+.footer{
+    display: block;
+    padding: 20px;
+    border-top: 1px dotted gray;
+}
